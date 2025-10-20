@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Raleway", Arial, sans-serif;
+  font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #434455;
@@ -75,11 +75,6 @@ body {
   color: #fff;
 }
 .main-screen-btn {
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
