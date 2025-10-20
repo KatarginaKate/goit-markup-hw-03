@@ -84,6 +84,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -103,6 +104,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 .benefit-list-title {
   font-weight: 500;
@@ -166,7 +168,7 @@ body {
   color: #404bbf;
 }
 .footer-logo .accent {
-  color: #2e2f42;
+  color:  #f4f4fd;
 }
 .footer-descr {
   font-size: 16px;
