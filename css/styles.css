@@ -20,10 +20,10 @@ body {
   box-sizing: border-box;
 }
 .header-container {
-  display: flex;
-  align-items: center;
-max-width: 1440px;
-padding: 24px 156px;
+display: flex;
+align-items: center;
+max-width: 1128px;
+padding: 0 15px;
 margin: 0 auto; 
 }
 .nav {
@@ -193,7 +193,7 @@ margin: 0 auto;
   color: var(--Ocean);
 }
 .footer-logo .accent {
-  color:  var(--Cloud);
+  color: var(--Cloud);
 }
 .footer-descr {
   font-size: 16px;
