@@ -1,9 +1,33 @@
+:root {
+  --Iris:#4d5ae5;
+  --Ocean:#404bbf;
+  --Navy-Blue:#2e2f42;
+  --Slate:#434455;
+  --White: #FFF;
+  --Cloud:#F4F4FD;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #434455;
-  background-color: #fff;
+  color: var(--Slate);
+  background-color: var(--White);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+max-width: 1440px;
+padding: 24px 156px;
+margin: 0 auto; 
+}
+.nav {
+  display: inline-block;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -12,24 +36,30 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--Iris);
   text-decoration: none;
 }
 .header-logo:hover,
 .header-logo:focus {
-  color: #404bbf;
+  color: var(--Ocean);
 }
 .header-logo:active {
   text-decoration: underline;
 }
 .header-logo .accent {
-  color: #2e2f42;
+  color: var(--Navy-Blue);
 }
 .header-list,
 .contacts-list,
 .benefits-list,
 .team-list,
 .portfolio-list {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style-type: none;
 }
 .header-link {
@@ -37,16 +67,16 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--Navy-Blue);
   text-decoration: none;
 }
 .header-link:hover,
 .contacts-link:hover {
-  color: #404bbf;
+  color: var(--Ocean);
 }
 .header-link:focus,
 .contacts-link:focus {
-  color: #404bbf;
+  color: var(--Ocean);
 }
 .contacts {
   font-style: normal;
@@ -56,15 +86,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--Slate);
   text-decoration: none;
 }
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #404bbf;
+  color: var(--Ocean);
 }
 .main-screen {
-  background-color: #2e2f42;
+  background-color: var(--Navy-Blue);
 }
 .main-screen-title {
   font-weight: 700;
@@ -72,22 +102,22 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  color: var(--White);
 }
 .main-screen-btn {
-  background: #4d5ae5;
+  background: var(--Iris);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: var(--White);
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
 .main-screen-btn:hover,
 .main-screen-btn:focus {
-  color: #fff;
-  background: #404bbf;
+  color: var(--White);
+  background: var(--Ocean);
 }
 
 .benefits-title,
@@ -98,7 +128,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
+  color: var(--Navy-Blue);
   text-transform: capitalize;
 }
 .benefit-list-title {
@@ -106,7 +136,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--Navy-Blue);
 }
 
 .benefit-descr {
@@ -115,7 +145,7 @@ body {
   letter-spacing: 0.02em;
 }
 .team-section {
-  background-color: #f4f4fd;
+  background-color: var(--Cloud);
 }
 .team-name,
 .portfolio-name {
@@ -123,26 +153,26 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--Navy-Blue);
   text-transform: capitalize;
 }
 .team-command {
-  background-color: #fff;
+  background-color: var(--White);
 }
 .team-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--Slate);
 }
 .portfolio-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--Slate);
 }
 .footer {
-  background: #2e2f42;
+  background: var(--Navy-Blue);
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -151,7 +181,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--Iris);
   text-decoration: none;
 }
 
@@ -160,14 +190,14 @@ body {
 }
 .footer-logo:hover,
 .footer-logo:focus {
-  color: #404bbf;
+  color: var(--Ocean);
 }
 .footer-logo .accent {
-  color:  #f4f4fd;
+  color:  var(--Cloud);
 }
 .footer-descr {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--Cloud);
 }
