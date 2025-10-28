@@ -117,7 +117,7 @@ ul {
 .benefits-list-one,
 .team-command .one,
 .portfolio-list-one {
-  width: calc((100%-48px)/3);
+  width: calc((100% - 48px) / 3);
 }
 
 .header-link {
@@ -216,8 +216,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  height: 72px;
-  width: 264px;
 }
 .team-section {
   background-color: var(--Cloud);
