@@ -7,14 +7,7 @@
   --Cloud: #f4f4fd;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -22,27 +15,15 @@ body {
   background-color: var(--White);
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+p,
+ul
+ {
   margin: 0;
 }
 
-p {
-  margin: 0;
-}
-ul {
-  margin: 0;
-}
 .container {
   width: 100%;
   max-width: 1158px;
@@ -99,14 +80,17 @@ ul {
 }
 .header-list,
 .contacts-list,
-.benefits-list,
 .team-list,
 .portfolio-list {
-  padding-left: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  list-style-type: none;
+}
+.benefits-list{
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
 }
 .benefits-list,
@@ -114,7 +98,7 @@ ul {
 .portfolio-list {
   row-gap: 48px;
 }
-.benefits-list-one,
+
 .team-command .one,
 .portfolio-list-one {
   width: calc((100% - 48px) / 3);
@@ -169,6 +153,7 @@ ul {
   color: var(--White);
   padding-top: 188px;
   margin: auto 15px;
+  padding-bottom: 48px;
 }
 .main-screen-btn {
   background: var(--Iris);
@@ -183,7 +168,6 @@ ul {
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
-  margin-top: 48px;
 }
 .main-screen-btn:hover,
 .main-screen-btn:focus {
@@ -200,10 +184,8 @@ ul {
   text-align: center;
   color: var(--Navy-Blue);
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
-
 .benefit-list-title {
   font-weight: 500;
   font-size: 20px;
