@@ -18,14 +18,24 @@ body {
 h1,
 h2,
 h3,
-p,
-ul
- {
+h4,
+h5,
+h6,
+p {
   margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 100%;
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -45,18 +55,20 @@ ul
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header {
+.header-page {
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container,
 .footer-container {
-  display: flex;
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
-.nav {
-  display: inline-block;
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -67,6 +79,8 @@ ul
   text-transform: uppercase;
   color: var(--Iris);
   text-decoration: none;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -78,20 +92,20 @@ ul
 .header-logo .accent {
   color: var(--Navy-Blue);
 }
-.header-list,
-.contacts-list,
-.team-list,
-.portfolio-list {
+.header-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
+  align-items: center;
+  gap: 40px;
 }
-.benefits-list{
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.benefits-list {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
 }
 .benefits-list,
 .team-list,
@@ -105,6 +119,8 @@ ul
 }
 
 .header-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -122,8 +138,12 @@ ul
 }
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
+
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -174,7 +194,13 @@ ul
   color: var(--White);
   background: var(--Ocean);
 }
-
+.team-list,
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .team-title,
 .portfolio-title {
   font-weight: 700;
