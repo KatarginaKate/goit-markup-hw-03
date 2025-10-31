@@ -5,6 +5,7 @@
   --Slate: #434455;
   --White: #fff;
   --Cloud: #f4f4fd;
+  --Cornflower: #e7e9fc;
 }
 
 /* general */
@@ -57,14 +58,15 @@ ol {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+img {
+  display: block;
+}
 /* header */
 
 .header-page {
   border-bottom: 1px solid #e7e9fc;
 }
-.header-container,
-.footer-container {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -243,6 +245,12 @@ ol {
   color: var(--Navy-Blue);
   text-transform: capitalize;
 }
+
+.team-name {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+}
 .team-command {
   background-color: var(--White);
 }
@@ -251,21 +259,37 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--Slate);
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 /* portfolio */
+
+.portfolio-name {
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
 
 .portfolio-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--Slate);
+  margin-left: 16px;
+  margin-bottom: 32px;
+ 
+
 }
 
 /* footer */
 
 .footer-page {
   background: var(--Navy-Blue);
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -276,6 +300,7 @@ ol {
   text-transform: uppercase;
   color: var(--Iris);
   text-decoration: none;
+  padding-bottom: 16px;
 }
 
 .footer-logo:active {
@@ -293,4 +318,5 @@ ol {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--Cloud);
+  width: 264px;
 }
