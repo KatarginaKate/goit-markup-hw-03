@@ -316,18 +316,18 @@ img {
   flex-direction: column;
 }
 
-.footer-logo {
+.footer-link {
   display: inline-block;
   margin-bottom: 16px;
 }
-.footer-logo:active {
+.footer-link:active {
   text-decoration: underline;
 }
-.footer-logo:hover,
-.footer-logo:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--Ocean);
 }
-.footer-logo .accent {
+.footer-link .accent {
   color: var(--Cloud);
 }
 .footer-descr {
