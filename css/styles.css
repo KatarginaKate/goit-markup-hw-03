@@ -87,6 +87,7 @@ img {
   text-decoration: none;
   padding: 24px 0;
   margin-right: 76px;
+  display: inline-block;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -317,9 +318,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--Iris);
+  display: inline-block;
   text-decoration: none;
   margin-bottom: 16px;
-  display: inline-block;
 }
 
 .footer-logo:active {
