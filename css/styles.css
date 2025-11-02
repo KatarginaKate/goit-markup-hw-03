@@ -66,8 +66,8 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--Iris);
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
 }
 
 img {
