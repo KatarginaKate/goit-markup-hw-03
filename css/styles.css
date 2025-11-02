@@ -150,7 +150,7 @@ img {
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  /* height: 600px; */
+  padding: 188px 0;
 }
 .main-screen-title {
   font-weight: 700;
@@ -160,8 +160,6 @@ img {
   text-align: center;
   color: var(--White);
   max-width: 496px;
-  padding-top: 188px;
-  margin: auto 15px;
   padding-bottom: 48px;
 }
 .main-screen-btn {
@@ -172,12 +170,14 @@ img {
   letter-spacing: 0.04em;
   color: var(--White);
   cursor: pointer;
-  display: inline-block;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   border-radius: 4px;
-  padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
-  margin-bottom: 188px;
+  margin: 0 auto;
 }
 .main-screen-btn:hover,
 .main-screen-btn:focus {
@@ -203,7 +203,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--Navy-Blue);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .benefit-descr {
@@ -217,12 +217,12 @@ img {
 .team-section {
   background-color: var(--Cloud);
 }
-.team-list,
-.portfolio-list {
-  row-gap: 48px;
+.team-list {
+  gap: 24px;
 }
 .team-command {
-  width: calc((100% - 48px) / 4);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list,
@@ -241,7 +241,7 @@ img {
   text-align: center;
   color: var(--Navy-Blue);
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-name,
 .portfolio-name {
@@ -252,9 +252,11 @@ img {
   color: var(--Navy-Blue);
   text-transform: capitalize;
 }
+.team-bottom {
+  padding: 32px 0;
+}
 
 .team-name {
-  margin-top: 32px;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -266,11 +268,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--Slate);
-  margin-bottom: 32px;
   text-align: center;
 }
 
 /* portfolio */
+
+.portfolio-list {
+  row-gap: 48px;
+  column-gap: 24px;
+}
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
@@ -297,6 +303,7 @@ img {
 
 .footer-page {
   background: var(--Navy-Blue);
+  padding: 100px 0;
 }
 .footer-container {
   display: flex;
@@ -311,7 +318,8 @@ img {
   text-transform: uppercase;
   color: var(--Iris);
   text-decoration: none;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-logo:active {
