@@ -66,6 +66,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--Iris);
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -316,7 +317,6 @@ img {
 }
 
 .footer-logo {
-  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo:active {
