@@ -68,8 +68,8 @@ ol {
   color: var(--Iris);
   text-decoration: none;
   display: inline-block;
-
 }
+
 img {
   display: block;
   width: 100%;
@@ -317,7 +317,7 @@ img {
 }
 
 .footer-logo {
-   margin-bottom: 16px;  
+  margin-bottom: 16px;
 }
 .footer-logo:active {
   text-decoration: underline;
