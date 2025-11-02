@@ -58,7 +58,7 @@ ol {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.logo-link {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -316,18 +316,17 @@ img {
   flex-direction: column;
 }
 
-.footer-link {
-  display: inline-block;
+.footer-logo {
   margin-bottom: 16px;
 }
-.footer-link:active {
+.footer-logo:active {
   text-decoration: underline;
 }
-.footer-link:hover,
-.footer-link:focus {
+.footer-logo:hover,
+.footer-logo:focus {
   color: var(--Ocean);
 }
-.footer-link .accent {
+.footer-logo .accent {
   color: var(--Cloud);
 }
 .footer-descr {
