@@ -310,10 +310,6 @@ img {
   background: var(--Navy-Blue);
   padding: 100px 0;
 }
-.footer-container {
-  display: flex;
-  flex-direction: column;
-}
 
 .footer-logo {
   display: inline-block;
