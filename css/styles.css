@@ -73,7 +73,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  
 }
 /* header */
 
@@ -223,13 +222,6 @@ img {
 .team-section {
   background-color: var(--Cloud);
 }
-.team-list {
-  gap: 24px;
-}
-.team-command {
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-}
 
 .team-list,
 .portfolio-list {
@@ -238,6 +230,11 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.team-list {
+  gap: 24px;
+}
+
 .team-title,
 .portfolio-title {
   font-weight: 700;
@@ -267,6 +264,8 @@ img {
   text-align: center;
 }
 .team-command {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--White);
 }
 .team-descr {
